@@ -1,0 +1,24 @@
+{
+  "name": "study-local-and-remote-e2e-codecept-testing",
+  "version": "0.0.0",
+  "description": ":microscope: Studying how one could use [Codecept](https://codecept.io/) to run e2e tests thought Headless browsers like WebdriverIO",
+  "main": "index.js",
+  "scripts": {
+    "test": "codecept"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/douglasduteil/study-local-and-remote-e2e-codecept-testing.git"
+  },
+  "keywords": [],
+  "author": "Douglas Duteil <douglasduteil@gmail.com> (douglasduteil.github.io)",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/douglasduteil/study-local-and-remote-e2e-codecept-testing/issues"
+  },
+  "homepage": "https://github.com/douglasduteil/study-local-and-remote-e2e-codecept-testing#readme",
+  "dependencies": {
+    "codeceptjs": "^2.1.0",
+    "puppeteer": "^1.14.0"
+  }
+}
