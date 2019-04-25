@@ -2,6 +2,9 @@
 
 > :microscope: Studying how one could use [Codecept](https://codecept.io/) to run e2e tests thought Headless browsers like WebdriverIO
 
+<p align=center>
+<img alt="licence logo" width=777 src=https://i.makeagif.com/media/11-24-2016/aamCBF.gif>
+</p>
 
 
 <br>
@@ -34,10 +37,6 @@ Provided by :
 ---
 
 <br>
-
-<p align=center>
-<img alt="licence logo" width=777 src=https://i.makeagif.com/media/11-24-2016/aamCBF.gif>
-</p>
 
 
 
