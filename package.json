@@ -4,7 +4,7 @@
   "description": ":microscope: Studying how one could use [Codecept](https://codecept.io/) to run e2e tests thought Headless browsers like WebdriverIO",
   "main": "index.js",
   "scripts": {
-    "test": "codecept"
+    "test": "codeceptjs run"
   },
   "repository": {
     "type": "git",
