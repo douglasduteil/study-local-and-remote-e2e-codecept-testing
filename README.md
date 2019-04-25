@@ -17,7 +17,7 @@
 <br>
 
 [![Build Status][travis-image]][travis-url]
-[![Sauce Test Status][saucelabs-master-branch-status-image]][saucelabs-master-branch-url]
+[![Browserstack Test Status][browserstack-master-branch-status-image]][browserstack-master-branch-url]
 
 
 <br>
