@@ -18,6 +18,17 @@
 
 [![Browserstack - Master Branch][browserstack-master-branch-matrix-image]][browserstack-master-branch-url]
 
+Provided by :
+
+<p align=center>
+  <a href="https://www.browserstack.com" title="BrowserStack">
+  <picture>
+    <source srcset="./.github/Browserstack-logo.svg" type="image/svg+xml">
+    <img src="./.github/Browserstack-logo@2x.png" alt="Browserstack">
+  </picture>
+  </a>
+</p>
+
 <br>
 
 ---
@@ -41,6 +52,7 @@ $ yarn
 ```sh
 $ yarn test
 ```
+
 
 ## License
 
