@@ -65,3 +65,7 @@ $ yarn test
 <p align=center>
 <a href="./LICENSE"><img alt="licence logo" width=300 src=./.github/WTFPL_logo.svg></a>
 </p>
+
+
+[travis-url]: https://travis-ci.com/douglasduteil/study-local-and-remote-e2e-codecept-testing
+[travis-image]: https://travis-ci.com/douglasduteil/study-local-and-remote-e2e-codecept-testing.svg?branch=master
