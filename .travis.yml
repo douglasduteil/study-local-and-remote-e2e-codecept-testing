@@ -7,3 +7,9 @@ git:
 
 cache:
   yarn: true
+
+addons:
+  browserstack:
+    username: douglas111
+    access_key:secure:
+      secure: "ERN68dHerSUM5Q975t4A6xyQJI3yI9f0kDlrJlDhieKvFPKU3+6/ui6cqnnK378gsylOW6YHnQiquYAfo2GBMreX+axdmv/oD7kPOxXVSAZ07RckjfLwvMOvbihwiVeNhQ9/Muo/4QlBzLURGd3XMsGWd1bWG4nYtliI3S9RZZrsl6PNifqL2Bc4cTItoBz/m8AKkWGoX7HGmP4rXX4N7J+cMeJwGc3ykejgUMIoLIh3Ei+pUL3IIbkHSROJvMP1tB6iuQ8Jjvyl/zpvM6qJ+bgMCLTyh8R7yPfAfXBRA9HEJPXQjPWWltlr5xcVHHclmMO6qj/YyiwXc1Gd29gDT1XCyV1Ca9qFoJTD3bwaD7WysN4NA1ZYY5h04QB4+/qByYM/gIuOT38wMco+OG3KLJQNuZlkGJr6KORYXEUtaLWcdym3jvZr9aC+p7LePzZl8tQKUYR0fpvlc/NDlQjmx3aA1Qs4dFFnxjPvvYBQT91IZE7nq0ETcaLPV5Xn0ng3rF58Vo7mJwY9vfEoN46BYFPRrWxySzwJrq1kWqNX7wOecpvEbYa7FfArWkKlrrn+ZElWCate1XpQmtkECkqP62qbhe99Nz83jbRatg87dzHVRLYwJLgYZbUpAdAiv/JKsda4iygBhHpvCP0+aQ0NFeZEBkH+L4bFUu+XJy4q3AU="
