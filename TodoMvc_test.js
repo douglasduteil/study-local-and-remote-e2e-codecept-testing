@@ -17,7 +17,7 @@ Scenario("edit todo", I => {
   I.see("write a review", ".todo-list");
   I.doubleClick("write a review");
   I.pressKey(["Control", "a"]);
-  I.fillField({ css: ":focus" }, "write old review");
+  I.fillField("What needs to be done?", "write old review");
   I.pressKey("Enter");
   I.see("write old review", ".todo-list");
 });
