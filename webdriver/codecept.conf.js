@@ -10,7 +10,7 @@ exports.config = {
         {
           browser: "chrome",
           desiredCapabilities: {
-            name: "Chrome Windows 10",
+            name: "Chrome 74 on Windows 10",
             os: "Windows",
             os_version: "10",
             browserName: "chrome",
@@ -20,7 +20,7 @@ exports.config = {
         {
           browser: "firefox",
           desiredCapabilities: {
-            name: "Firefox Windows 10",
+            name: "Firefox 66 on Windows 10",
             os: "Windows",
             os_version: "10",
             browserName: "firefox",

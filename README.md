@@ -75,5 +75,5 @@ $ yarn lerna run --scope=@runner/puppetteer test
 
 [travis-url]: https://travis-ci.com/douglasduteil/study-local-and-remote-e2e-codecept-testing
 [travis-image]: https://travis-ci.com/douglasduteil/study-local-and-remote-e2e-codecept-testing.svg?branch=master
-[browserstack-master-branch-status-image]: https://www.browserstack.com/automate/badge.svg?badge_key=N2plV25FallBa3VQT0xEemozV0daSVZPeHpERjVkNTl2T3NpeStHKysrdz0tLVZocFRHYnpYSUlmY21QRFBqTWJId2c9PQ==--da848815d483bb178fa8b7423cb47307371e35ca
-[browserstack-master-branch-url]: https://www.browserstack.com/automate/public-build/N2plV25FallBa3VQT0xEemozV0daSVZPeHpERjVkNTl2T3NpeStHKysrdz0tLVZocFRHYnpYSUlmY21QRFBqTWJId2c9PQ==--da848815d483bb178fa8b7423cb47307371e35ca
+[browserstack-master-branch-status-image]: https://www.browserstack.com/automate/badge.svg?badge_key=eDN0NHNqUWVFOUl0L0NuRVdBWnI5dUtTaDAyRnlRcllxeUc1ajBaSnhjWT0tLWRMNWZ6cHlaK2UyaGNMaGJIaFExbGc9PQ==--c8f0206161c64835ccffec7c04009d2f436e3e71
+[browserstack-master-branch-url]: https://www.browserstack.com/automate/public-build/eDN0NHNqUWVFOUl0L0NuRVdBWnI5dUtTaDAyRnlRcllxeUc1ajBaSnhjWT0tLWRMNWZ6cHlaK2UyaGNMaGJIaFExbGc9PQ==--c8f0206161c64835ccffec7c04009d2f436e3e71
