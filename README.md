@@ -17,8 +17,6 @@
 <br>
 
 [![Build Status][travis-image]][travis-url]
-[![Browserstack Test Status][browserstack-master-branch-status-image]][browserstack-master-branch-url]
-
 
 <br>
 
@@ -27,6 +25,14 @@
 <br>
 
 [![Browserstack - Master Branch][browserstack-master-branch-matrix-image]][browserstack-master-branch-url]
+
+<br>
+
+---
+
+<br>
+
+[![Browserstack Test Status][browserstack-master-branch-status-image]][browserstack-master-branch-url]
 
 Provided by :
 

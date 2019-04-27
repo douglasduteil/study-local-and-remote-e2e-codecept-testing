@@ -1,5 +1,5 @@
 {
-  "name": "@runner/webdriver",
+  "name": "@runner/browserstack",
   "version": "0.0.0",
   "main": "index.js",
   "license": "WTFPL",

@@ -32,11 +32,11 @@ jobs:
       script:
         - yarn lerna run --scope=@runner/puppetteer test
     - <<: *node_stage
-      name: Webdriver
+      name: Browserstack
       cache:
         yarn: true
         directories:
-          - ./webdriver/node_modules
+          - ./browserstack/node_modules
       addons:
         browserstack:
           username: douglas111
@@ -47,6 +47,26 @@ jobs:
         - secure: "JcSzwtvjA58UCN6Qy53CtCoE8R3JGhVOC3GKSuSWcp6KTr7TJWEdvPvADWbGcpchfyn010xnNrQOihho3K3mXwye9hc6ktNC7Dvxi0mvcGGJFLqdn3WmsTGNBYkdjK7egY62D/MyuMJ0w0Re7/8kd8znztvlynyuWMxjREq3HJpPCqyWZM6o1R055RpblAc4Cz2CVujvNi4a0x3nffKDQxA5LXdnPS7T0LYnPEf6EjlqJ9H0qqt/pgb9ZVFjQ+oqZ6G0vz5oDHJ483GN/mtgnDlLXqOk1WZ4UjQ5LalQ5Rs62Jn37V0JxjheT580bgGPXi1jssn3hGzj4ZHBQtWxKUGm3EjYEV/LB3H4xbIyZPWMK9HKJ1GKJbVKezEgOCyHlWeUcn49C8nJhQcuRQU1qCCDb2GYM98N+AyDNlFCXEiu/PKomgnMi9AcrMuuD7csBlnwoo6JAqN0ossG7gRxc6P0iCI1vDVMD5G/E7JatEd8S55QivJiVaDJiVLv4LNjSMjQDyTGg/sytqJ40gc4kd/hcPr8PlE1+87rPCZMI1VUer1A/Fq0sNz0OgXJMLClALYg2ICmoTkQcsrDESpkrBFT/yWi1M5Jav9L8XoZIyYUerGxSd1eEHNzo+z/JWpmxvqZO09cSqC71PXgOIgcztwKsMOzFBxaMY5VCsqMIjw="
 
       before_script:
-        - yarn run -- lerna exec --scope=@runner/webdriver -- yarn --frozen-lockfile
+        - yarn run -- lerna exec --scope=@runner/browserstack -- yarn --frozen-lockfile
       script:
-        - yarn lerna run --scope=@runner/webdriver test
+        - yarn lerna run --scope=@runner/browserstack test
+    - <<: *node_stage
+      name: Sauce Labs
+      cache:
+        yarn: true
+        directories:
+          - ./saucelabs/node_modules
+      addons:
+        sauce_connect:
+          username: douglasduteil+saucelabs.7c71bc2
+          access_key:
+            secure: "tqIvv+ihAAqhEsZUI26a0R+jBOXYU/HgoespB6GdhXd9DSgpOx4I0ehYeM+kLczcBGHDIg+OqngrAQezo9x4VCu3bok2VEJiNfBAAJ4ZQmGvgpfxeZlqiAPhfymdLveUiKi4F7vH5U7MghjCkPP7uEFWp20e9t6pPCsWW05iOtb5VP8xGCxFw2Lz1MjxvHFDLnQMGXwYNZBIKnRh3/GEI/cEPs3MnFwURwbUzMxMpAnUpsXO9koMYa/dkSqAuv0OyoOAYfzHb3uR6IoRp0/JK0u2Ibm2+XbkeJkMcZzF8X1uSZiadgtqHzJcmyAo53LIqgCa6XRx7JUAImIvG5UIyrb7Vs3CbkuY5v//xnBoq+jyn+t9MauxJi7VWXi+V3hJOBpu1EBMWsTOqQqTELhbrh7WWvhzWbAaaVThSjpNPvLhwZC6Q/PsRAunmwuFuSxqBRhw8TiZeW1yW9V6rp81MJcQsVQtLbqoyy8kbxr8GESQEtoLD7fjZJ3oEgKwPM3oRuwlyTVSA1iT4DBWhNrdNzn9YDsvZg11iXMB1qHdQP0LW+Y8I1ZJ0iR4zPYUSYmr2awWsNV47BzpvvBm5QMbIrfhZrqugUNgVYBcii9NI+BI5UsAKF5IJ5dJHHmCXgKMpl1bhsBwZ33vKBDjP8RAg7mpE5HpRMHly8c1n4Kaq+E="
+
+      env:
+        - secure: "xRfLYizfb2wZ1kNkye7uviIeJqK+oO7KRuJG1bX+08r5ghrJBPXC0bU31TwYC+EloDT0BTUuCspu00R/H+YdJKpKLdxDyJhnslnbdqKluombjj+7MImCQPmGR42xoQsjsJD9Jk+/z6SGhqU0GppxsjqyRfEh7bIN/Gj6cmQqzzK0MGsJcI24J3ZgWj+W/tQf8BBTXw1t3Fan9wRRHig7umpH0cSnF6xabg+9rnQFCMrMSu87Pouh7whR0drbfFdFr45x5Hxru8qMm9wcGhXnBjjeOSYnKQjdBODKiy4CuH/19DaqX+oas+WyrC0llhGP3zDyIYmj1AUws88aDUYi4GYVKma3htGhwFNLqBfF/OGwyhcanbktb6wR/nTDFq4SDFNaMHGVqRizr066TmYXG22hCHKqVkFn3OXbphhu3CjVp/XsDszfsXcMZ7h4jUoQ4rpDqeffKelIdxpLK+biIwsDIk7OCeU1lwR6bkan3w5O1awVzigjqTYzIJcuB+QP4cdnH6CUKYIj273qJX9JIM+ILckfhX2W9fhA9YuUkfIlW+CQ9PdFPhBcYd0hTt56l98h99LTRO/BgPQzQ095Quuhl7ELBbRHOCro9iUUHmy9fVwZmxf28m2SebG5JnZ75AfB+rsOw1dSm7TB1va9Ty0iivWSjJhIe1WGGYRKFwQ="
+        - secure: "wUY72wx+ADC83zdhAUrSqAoOFTo48tCVh0lJeYATRKp0jzIsyd82lJSjdHpbHi4LzUm15K5Y97NFkWJdNy1ztRU0alQDeqQrQb4XLV4P1m0DJjXskwzFJyzfxYnsflvqIEKDvvR3SIAVWq6gMvMz/ZjKhibaHCioquJM6qTW/Go1WKSumpX45QqFwW8LB/hco7RhQTN5iKa+4YCw7OmxwdG54h5Hie+VoA9MjbG+D2DQ9btziw9B1YVb84cJv1oK/zxGBLEN+BLfo8K6n5nT+plM5xbQ6L0zu7jzQFI6z6YEWhy9o9Q7p1roA7L2HFCdovbTLfFnbvamjwtVkSprbEwZlo3R/7wP6epVfE3wLveXLRetv3C8fEiOncIRP+sxbEQatEhrbluRAZZ1yOEQ32+Opt6NHkqqaxQvbVJlCGTLpxeAYKV9+A6WB4KoL6JbPOijzFY1KMzePq1K7bbj5FRd+mpJ9S1VIcIOf64hKxL3YsvW0agu3r9lKj0mpy3gDdmMBri6hnIl0u9OF9ow+uieLzb3w+xOFg/UTCO3f4zF3Y7Uhw00/3Ehw7Q1lRW0SUids2GkcX3qlYRGLi4v2RjgNM3PZXSJ3FT58pNp9QlcsG1F+3v90nxtSRavVvC4fLIYnzNBwZJyzj9NxwQU88ak5q2EwLABiXX1BsgsFvM="
+
+      before_script:
+        - yarn run -- lerna exec --scope=@runner/saucelabs -- yarn --frozen-lockfile
+      script:
+        - yarn lerna run --scope=@runner/saucelabs test
