@@ -8,20 +8,24 @@ exports.config = {
     basic: {
       browsers: [
         {
-          name: "Chrome Windows 10",
-          os: "Windows",
-          os_version: "10",
           browser: "chrome",
-          browserName: "chrome",
-          browser_version: "74.0"
+          desiredCapabilities: {
+            name: "Chrome Windows 10",
+            os: "Windows",
+            os_version: "10",
+            browserName: "chrome",
+            browser_version: "74.0"
+          }
         },
         {
-          name: "Firefox Windows 10",
-          os: "Windows",
-          os_version: "10",
           browser: "firefox",
-          browserName: "firefox",
-          browser_version: "66.0"
+          desiredCapabilities: {
+            name: "Firefox Windows 10",
+            os: "Windows",
+            os_version: "10",
+            browserName: "firefox",
+            browser_version: "66.0"
+          }
         }
       ]
     }
