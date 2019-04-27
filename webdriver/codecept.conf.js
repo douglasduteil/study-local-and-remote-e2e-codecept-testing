@@ -33,6 +33,7 @@ exports.config = {
       user: process.env.BROWSERSTACK_USER,
       key: process.env.BROWSERSTACK_ACCESS_KEY,
       desiredCapabilities: {
+        project: config.name,
         acceptInsecureCerts: true,
         acceptInvalidCerts: true,
         acceptSslCerts: true
