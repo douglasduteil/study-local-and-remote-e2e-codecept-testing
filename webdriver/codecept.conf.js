@@ -6,10 +6,7 @@ exports.config = {
   ...config,
   multiple: {
     basic: {
-      browsers: [
-        "chrome",
-        "firefox"
-      ]
+      browsers: ["chrome", "firefox"]
     }
   },
 
@@ -20,10 +17,14 @@ exports.config = {
       user: process.env.BROWSERSTACK_USER,
       key: process.env.BROWSERSTACK_ACCESS_KEY,
       desiredCapabilities: {
-        project: config.name,
+        build: "Travis #" + process.env.TRAVIS_BUILD_NUMBER,
+        "browserstack.local": true,
+        "browserstack.localIdentifier":
+          process.env.BROWSERSTACK_LOCAL_IDENTIFIER,
         acceptInsecureCerts: true,
         acceptInvalidCerts: true,
-        acceptSslCerts: true
+        acceptSslCerts: true,
+        project: config.name + "#" + process.env.TRAVIS_BRAN
       }
     }
   },
