@@ -23,12 +23,20 @@ jobs:
   include:
     - <<: *node_stage
       name: Puppetteer
+      cache:
+        yarn: true
+        directories:
+          - ./puppetteer/node_modules
       before_script:
         - yarn run -- lerna exec --scope=@runner/puppetteer -- yarn --frozen-lockfile
       script:
         - yarn lerna run --scope=@runner/puppetteer test
     - <<: *node_stage
       name: Webdriver
+      cache:
+        yarn: true
+        directories:
+          - ./webdriver/node_modules
       addons:
         browserstack:
           username: douglas111
