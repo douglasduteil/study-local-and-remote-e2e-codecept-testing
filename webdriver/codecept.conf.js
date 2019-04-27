@@ -11,13 +11,17 @@ exports.config = {
           name: "Chrome Windows 10",
           os: "Windows",
           os_version: "10",
-          browser: "chrome"
+          browser: "chrome",
+          browserName: "chrome",
+          browser_version: "74.0"
         },
         {
           name: "Firefox Windows 10",
           os: "Windows",
           os_version: "10",
-          browser: "firefox"
+          browser: "firefox",
+          browserName: "firefox",
+          browser_version: "66.0"
         }
       ]
     }
