@@ -8,20 +8,7 @@ exports.config = {
     basic: {
       browsers: [
         "chrome",
-        {
-          desiredCapabilities: {
-            browserName: "safari",
-            "browserstack.os": "OS X",
-            "browserstack.os_version": "High Sierra",
-            windowSize: "maximize",
-            "browserstack.local": false,
-            "browserstack.video": true,
-            ignoreHTTPSErrors: true,
-            acceptInsecureCerts: true,
-            acceptInvalidCerts: true,
-            acceptSslCerts: true
-          }
-        }
+        "safari"
       ]
     }
   },
