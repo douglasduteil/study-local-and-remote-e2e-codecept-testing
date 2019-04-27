@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "WTFPL",
   "scripts": {
-    "test": "codeceptjs run"
+    "test": "codeceptjs run-multiple --all"
   },
   "dependencies": {
     "@wdio/browserstack-service": "^5.7.13",
