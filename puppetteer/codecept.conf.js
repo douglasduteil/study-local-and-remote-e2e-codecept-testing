@@ -11,7 +11,7 @@ exports.config = {
         headless: true,
         args: ["--no-sandbox"]
       },
-      url: "http://todomvc.com/"
+      url: "http://todomvc.com"
     }
   }
 };

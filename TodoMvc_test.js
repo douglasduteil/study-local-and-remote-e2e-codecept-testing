@@ -1,7 +1,7 @@
 Feature("TodoMvc");
 
 Before(I => {
-  I.amOnPage("/");
+  I.amOnPage("/examples/vanillajs/");
 });
 
 Scenario("create todo item", I => {
