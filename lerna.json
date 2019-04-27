@@ -1,0 +1,7 @@
+{
+  "packages": [
+    "puppetteer",
+    "webdriver"
+  ],
+  "version": "0.0.0"
+}

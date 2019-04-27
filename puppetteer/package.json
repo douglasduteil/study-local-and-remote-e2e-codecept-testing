@@ -1,0 +1,13 @@
+{
+  "name": "@runner/puppetteer",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "WTFPL",
+  "scripts": {
+    "test": "codeceptjs run"
+  },
+  "dependencies": {
+    "codeceptjs": "^2.1.0",
+    "puppeteer": "^1.14.0"
+  }
+}

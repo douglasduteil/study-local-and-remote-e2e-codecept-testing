@@ -51,12 +51,18 @@ Provided by :
 
 ```sh
 $ yarn
+
+# Install the puppetteer runner.
+$ yarn run -- lerna exec --scope=@runner/puppetteer -- yarn --frozen-lockfile
 ```
 
 ## Launch all tests
 
 ```sh
 $ yarn test
+
+# Run only the tests using puppetteer
+$ yarn lerna run --scope=@runner/puppetteer test
 ```
 
 
@@ -69,3 +75,5 @@ $ yarn test
 
 [travis-url]: https://travis-ci.com/douglasduteil/study-local-and-remote-e2e-codecept-testing
 [travis-image]: https://travis-ci.com/douglasduteil/study-local-and-remote-e2e-codecept-testing.svg?branch=master
+[browserstack-master-branch-status-image](https://www.browserstack.com/automate/badge.svg?badge_key=<badge_key>)]
+[browserstack-master-branch-url](https://www.browserstack.com/automate/public-build/<badge_key>)

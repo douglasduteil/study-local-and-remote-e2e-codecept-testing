@@ -4,7 +4,7 @@
   "description": ":microscope: Studying how one could use [Codecept](https://codecept.io/) to run e2e tests thought Headless browsers like WebdriverIO",
   "main": "index.js",
   "scripts": {
-    "test": "codeceptjs run"
+    "test": "lerna run test"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/douglasduteil/study-local-and-remote-e2e-codecept-testing#readme",
   "dependencies": {
-    "codeceptjs": "^2.1.0",
-    "puppeteer": "^1.15.0"
+    "lerna": "^3.13.4"
   }
 }

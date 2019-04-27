@@ -1,17 +1,12 @@
+//
+
+const {join} = require('path')
+
 exports.config = {
-  tests: "./*_test.js",
+  tests: join(__dirname, "./*_test.js"),
   output: "./output",
-  helpers: {
-    Puppeteer: {
-      chrome: {
-        headless: true,
-        args: ["--no-sandbox"]
-      },
-      url: "http://todomvc.com/examples/vanillajs/"
-    }
-  },
   include: {
-    I: "./steps_file.js"
+    I: join(__dirname, "./steps_file.js")
   },
   bootstrap: null,
   mocha: {},
