@@ -6,7 +6,20 @@ exports.config = {
   ...config,
   multiple: {
     basic: {
-      browsers: ["chrome", "firefox"]
+      browsers: [
+        {
+          name: "Chrome Windows 10",
+          os: "Windows",
+          os_version: "10",
+          browser: "chrome"
+        },
+        {
+          name: "Firefox Windows 10",
+          os: "Windows",
+          os_version: "10",
+          browser: "firefox"
+        }
+      ]
     }
   },
 
@@ -17,10 +30,11 @@ exports.config = {
       user: process.env.BROWSERSTACK_USER,
       key: process.env.BROWSERSTACK_ACCESS_KEY,
       desiredCapabilities: {
-        build: "Travis #" + process.env.TRAVIS_BUILD_NUMBER,
         "browserstack.local": true,
         "browserstack.localIdentifier":
           process.env.BROWSERSTACK_LOCAL_IDENTIFIER,
+        "browserstack.selenium_version": "3.14.0",
+        build: "Travis #" + process.env.TRAVIS_BUILD_NUMBER,
         acceptInsecureCerts: true,
         acceptInvalidCerts: true,
         acceptSslCerts: true,
