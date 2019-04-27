@@ -34,6 +34,7 @@ exports.config = {
   helpers: {
     WebDriver: {
       url: "http://todomvc.com",
+      restart: false,
       browser: "Chrome",
       user: process.env.BROWSERSTACK_USER,
       key: process.env.BROWSERSTACK_ACCESS_KEY,
