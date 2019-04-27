@@ -42,7 +42,7 @@ exports.config = {
         acceptInsecureCerts: true,
         acceptInvalidCerts: true,
         acceptSslCerts: true,
-        project: config.name + "#" + process.env.TRAVIS_BRAN
+        project: config.name + "#" + process.env.TRAVIS_BRANCH
       }
     }
   },
