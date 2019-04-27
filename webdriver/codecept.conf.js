@@ -8,7 +8,7 @@ exports.config = {
     basic: {
       browsers: [
         "chrome",
-        "safari"
+        "firefox"
       ]
     }
   },
