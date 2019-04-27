@@ -8,10 +8,10 @@ exports.config = {
     Puppeteer: {
       restart: false,
       chrome: {
-        headless: false,
+        headless: true,
         args: ["--no-sandbox"]
       },
-      url: "http://todomvc.com/examples/vanillajs/"
+      url: "http://todomvc.com/"
     }
   }
 };
