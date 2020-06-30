@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/douglasduteil/study-local-and-remote-e2e-codecept-testing#readme",
   "dependencies": {
-    "lerna": "^3.13.4"
+    "lerna": "^3.22.1"
   }
 }
