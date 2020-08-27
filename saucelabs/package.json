@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@wdio/sauce-service": "^5.7.15",
-    "codeceptjs": "^2.1.0",
+    "codeceptjs": "^2.6.10",
     "webdriverio": "^5.7.15"
   }
 }
