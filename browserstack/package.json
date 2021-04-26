@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@wdio/browserstack-service": "^5.7.13",
-    "codeceptjs": "^2.1.0",
+    "codeceptjs": "^2.6.11",
     "webdriverio": "^5.7.15"
   }
 }
