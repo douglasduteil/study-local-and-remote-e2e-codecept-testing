@@ -7,8 +7,8 @@
     "test": "codeceptjs run-multiple --all"
   },
   "dependencies": {
-    "@wdio/browserstack-service": "^5.7.13",
+    "@wdio/browserstack-service": "^5.22.1",
     "codeceptjs": "^2.1.0",
-    "webdriverio": "^5.7.15"
+    "webdriverio": "^5.23.0"
   }
 }
